@@ -1,4 +1,4 @@
-package Transport;
+package transport;
 
 public class Bus extends Transport implements Compating {
     public Bus(String brand, String model, float engineVolume) {
