@@ -5,6 +5,7 @@ import transport.Car;
 import transport.Bus;
 import transport.Truck;
 import transport.Transport;
+
 public class Main {
     public static void main(String[] args) {
         Car car1 =new Car("Лада","Гранта",1.6);

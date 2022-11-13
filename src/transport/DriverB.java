@@ -5,7 +5,6 @@ public class DriverB extends Driver<Car>{
     public DriverB(String fullName, String categoryName, int yearDriving) {
         super(fullName, categoryName, yearDriving);
     }
-
     @Override
     public void startDrive() {
 

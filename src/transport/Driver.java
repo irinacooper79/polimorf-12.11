@@ -1,5 +1,4 @@
 package transport;
-
 public abstract class  Driver <D extends Transport> {
     private String fullName;
     private String categoryName;

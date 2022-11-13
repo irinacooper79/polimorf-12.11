@@ -3,7 +3,6 @@ public abstract class Transport {
     private final String brand;
     private final String model;
     private final float engineVolume;
-
     protected Transport (String brand, String model, float engineVolume) {
         this.brand = brand;
         this.model = model;

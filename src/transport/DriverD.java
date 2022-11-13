@@ -3,7 +3,6 @@ public class DriverD extends Driver<Bus>{
     public DriverD(String fullName, String categoryName, int yearDriving) {
         super(fullName, categoryName, yearDriving);
     }
-
     @Override
     public void startDrive() {
 
