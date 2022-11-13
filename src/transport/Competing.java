@@ -1,5 +1,4 @@
 package transport;
-
 public interface Compеting {
 
     void pitStop();

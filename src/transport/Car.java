@@ -1,6 +1,6 @@
 package transport;
 
-public class Car extends Transport implements Compating {
+public class Car extends Transport implements Compeating {
     public Car (String brand, String model, float engineVolume) {
         super (brand, model, engineVolume);
     }
@@ -30,14 +30,14 @@ public class Car extends Transport implements Compating {
     }
 
     @Override
-    public void bestLapTime() {
+    public void getBestLapTime() {
         System.out.printf("Лучшее время авто %s %s - 6 минут 12 секунд",
                 this.getBrand(),
                 this.getModel());
     }
 
     @Override
-    public void maxSpeed() {
+    public void getMaxSpeed() {
         System.out.printf("Максимальная скорость авто %s %s - 220 км/ч",
                 this.getBrand(),
                 this.getModel());

@@ -1,5 +1,4 @@
 package transport;
-
 public class DriverC extends Driver<Truck>{
     public DriverC(String fullName, String categoryName, int yearDriving) {
         super(fullName, categoryName, yearDriving);

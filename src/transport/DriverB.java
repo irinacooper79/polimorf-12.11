@@ -10,7 +10,6 @@ public class DriverB extends Driver<Car>{
     public void startDrive() {
 
     }
-
     @Override
     public void finishDrive() {
 
