@@ -8,7 +8,6 @@ public abstract class Transport {
         this.model = model;
         this.engineVolume = engineVolume;
     }
-
     public abstract void startMovement();
     public abstract void stopMovement();
 

@@ -1,6 +1,6 @@
 package transport;
 
-public class Car extends Transport implements Competing {
+public class Car extends Transport implements Compating {
     public Car (String brand, String model, float engineVolume) {
         super (brand, model, engineVolume);
     }

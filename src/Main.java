@@ -1,6 +1,6 @@
-import Driver.DriverB;
-import Driver.DriverC;
-import Driver.DriverD;
+import transport.DriverB;
+import transport.DriverC;
+import transport.DriverD;
 import transport.Car;
 import transport.Bus;
 import transport.Truck;
@@ -24,8 +24,8 @@ public class Main {
         DriverC mike=new DriverC("Михаил Петров","С",10);
         DriverD vova=new DriverD("Владимир Сайвор","D",10);
 
-        car1.start();
-        System.out.println( car2.bestTime());
+        car1.startMovement();
+        System.out.println(car2.getBestLapTime());
         System.out.println(alex.driverCar(car3));
         System.out.println(alex.driverTruck(truck1));
         System.out.println(mike.driverTruck(truck1));
