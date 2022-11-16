@@ -1,5 +1,6 @@
 package transport;
 
+import java.util.concurrent.ThreadLocalRandom;
 public class Car extends Transport implements Compating {
     public Car (String brand, String model, float engineVolume) {
         super (brand, model, engineVolume);
@@ -7,39 +8,28 @@ public class Car extends Transport implements Compating {
 
     @Override
     public void startMovement() {
-        System.out.printf("Автомобиль %s %s начинает движение",
+        System.out.printf("Car %s started moving",
                 this.getBrand(),
                 this.getModel());
-        System.out.println();
-    }
-
+            }
     @Override
     public void stopMovement() {
-        System.out.printf("Автомобиль %s %s заканчивает движение",
+        System.out.printf("Car %s stopped moving",
                 this.getBrand(),
                 this.getModel());
-        System.out.println();
-    }
-
+            }
     @Override
     public void pitStop() {
-        System.out.printf("Автомобиль %s %s на пит-стопе",
+        System.out.printf("Car %s performed pit-stop",
                 this.getBrand(),
                 this.getModel());
-        System.out.println();
-    }
-
+            }
     @Override
-    public void getBestLapTime() {
-        System.out.printf("Лучшее время авто %s %s - 6 минут 12 секунд",
-                this.getBrand(),
-                this.getModel());
-    }
+    public int getBestLapTime() { return ThreadLocalRandom.current(). nextInt(1,100);
 
+    }
     @Override
-    public void getMaxSpeed() {
-        System.out.printf("Максимальная скорость авто %s %s - 220 км/ч",
-                this.getBrand(),
-                this.getModel());
+    public int getMaxSpeed() { return () ThreadLocalRandom.current(). nextInt(1,400);
+
     }
 }

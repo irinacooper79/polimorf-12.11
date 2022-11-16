@@ -1,4 +1,5 @@
 package transport;
+
 public abstract class Transport {
     private final String brand;
     private final String model;
@@ -14,12 +15,6 @@ public abstract class Transport {
     public String getBrand() {
         return brand;
     }
-    public String getModel() {
-
-        return model;
+    public String getModel() { return model;}
+    public float getEngineVolume() { return engineVolume;}
     }
-    public float getEngineVolume() {
-
-        return engineVolume;
-    }
-}

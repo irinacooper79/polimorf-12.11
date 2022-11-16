@@ -11,7 +11,6 @@ public class Truck extends Transport implements Compating {
                 this.getModel());
         System.out.println();
     }
-
     @Override
     public void stopMovement() {
         System.out.printf("Грузовик %s %s заканчивает движение",
