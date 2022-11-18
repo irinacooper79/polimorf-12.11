@@ -34,7 +34,6 @@ public class Truck extends Transport implements Compating {
                 this.getModel());
         System.out.println();
     }
-
     @Override
     public void maxSpeed() {
         System.out.printf("Максимальная скорость грузовик %s %s - 110 км/ч",

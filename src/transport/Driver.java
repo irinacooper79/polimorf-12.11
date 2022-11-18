@@ -15,12 +15,12 @@ public abstract class  Driver <T extends Transport> {
     public void startMovement() {
         System.out.println("Driver %s started moving", this.fullName);
         this.car.startMovement();
+    }
 
-        public void stopMovement () {
+        public void stopMovement(){
             System.out.printf("Driver %s stopped moving", this.fullName);
             this.car.stopMovement();
         }
-    }
 
     public void refill() {
         System.out.printf("Driver %s refilling the %s",
@@ -42,11 +42,9 @@ public abstract class  Driver <T extends Transport> {
     }
 
     public String toString() {
-        return String.format("Водитель %s управлять автомобилем %s и будет участвовать в заезде";
+        return String.format("Водитель %s управлять автомобилем %s и будет участвовать в заезде");
         this.fullName,
-                this.car.getBrand(),
-                this.car.getModel());
-
-    }
+        this.car. getBrand(),
+        this.car. getModel());}
 }
 

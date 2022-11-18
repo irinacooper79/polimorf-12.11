@@ -2,7 +2,7 @@ package transport;
 import java.util.concurrent.ThreadLocalRandom;
 public class Bus extends Transport implements Compating {
     public Bus(String brand, String model, float engineVolume){
-        super(brand, model, engineVolume); {
+        super(brand, model, engineVolume);
     }
     @Override
     public void startMovement() {
@@ -16,7 +16,6 @@ public class Bus extends Transport implements Compating {
                 this.getBrand(),
                 this.getModel());
             }
-
     @Override
     public void pitStop() {
         System.out.printf("Bus %s %s performed pit-stop",
@@ -27,7 +26,7 @@ public class Bus extends Transport implements Compating {
     @Override
     public int getbestLapTime() { return ThreadLocalRandom.current().nextInt(1,100);}
 
-    }
+
     @Override
     public int getmaxSpeed() { return ThreadLocalRandom.current().nextInt(1,400);}
 

@@ -25,11 +25,9 @@ public class Car extends Transport implements Compating {
                 this.getModel());
             }
     @Override
-    public int getBestLapTime() { return ThreadLocalRandom.current(). nextInt(1,100);
+    public int getbestLapTime() { return ThreadLocalRandom.current(). nextInt(1,100);
 
     }
     @Override
-    public int getMaxSpeed() { return () ThreadLocalRandom.current(). nextInt(1,400);
-
-    }
+    public int getmaxSpeed() { return  ThreadLocalRandom.current(). nextInt(1,400); }
 }
