@@ -28,6 +28,16 @@ public class Truck extends Transport implements Compating {
     }
 
     @Override
+    public int getbestLapTime() {
+        return 0;
+    }
+
+    @Override
+    public int getmaxSpeed() {
+        return 0;
+    }
+
+    @Override
     public void bestLapTime() {
         System.out.printf("Лучшее время грузовика %s %s - 9 минут 10 секунд",
                 this.getBrand(),

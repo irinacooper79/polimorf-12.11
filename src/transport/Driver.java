@@ -3,7 +3,7 @@ public abstract class  Driver <T extends Transport> {
     private String fullName;
     private String category;
     public int drivingExperience;
-    private final T car;
+    private T car = null;
 
     public Driver(String fullName, String category, int drivingExperience, T car) {
         this.fullName = fullName;
@@ -12,15 +12,20 @@ public abstract class  Driver <T extends Transport> {
         this.car = car;
     }
 
-    public void startMovement() {
-        System.out.println("Driver %s started moving", this.fullName);
+    public Driver(T car) {
+
+        this.car = car;
+    }
+
+     public void startMovement() {
+        System.out.printf("Driver %s started moving", this.fullName);
         this.car.startMovement();
     }
 
-        public void stopMovement(){
-            System.out.printf("Driver %s stopped moving", this.fullName);
-            this.car.stopMovement();
-        }
+    public void stopMovement() {
+        System.out.printf("Driver %s stopped moving", this.fullName);
+        this.car.stopMovement();
+    }
 
     public void refill() {
         System.out.printf("Driver %s refilling the %s",
@@ -42,9 +47,7 @@ public abstract class  Driver <T extends Transport> {
     }
 
     public String toString() {
-        return String.format("Водитель %s управлять автомобилем %s и будет участвовать в заезде");
-        this.fullName,
-        this.car. getBrand(),
-        this.car. getModel());}
+        return String.format("Водитель %s управлять автомобилем и будет участвовать в заезде");
+    }
 }
 

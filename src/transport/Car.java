@@ -18,6 +18,17 @@ public class Car extends Transport implements Compating {
                 this.getBrand(),
                 this.getModel());
             }
+
+    @Override
+    public void bestLapTime() {
+
+    }
+
+    @Override
+    public void maxSpeed() {
+
+    }
+
     @Override
     public void pitStop() {
         System.out.printf("Car %s performed pit-stop",

@@ -8,7 +8,7 @@ import transport.Transport;
 
 public class Main {
     public static void main(String[] args) {
-        Car car1 =new Car("Лада","Гранта",1.6F);
+        Car car1 =new Car("Лада","Гранта",1.6f);
         Car car2 =new Car("Волга","Siber",2.6F);
         Car car3 =new Car("УАЗ","Патриот",3.6F);
         Car car4 =new Car("Ока","Гном",1.0F);

@@ -16,6 +16,17 @@ public class Bus extends Transport implements Compating {
                 this.getBrand(),
                 this.getModel());
             }
+
+    @Override
+    public void bestLapTime() {
+
+    }
+
+    @Override
+    public void maxSpeed() {
+
+    }
+
     @Override
     public void pitStop() {
         System.out.printf("Bus %s %s performed pit-stop",

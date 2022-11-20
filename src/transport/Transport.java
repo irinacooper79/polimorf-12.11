@@ -16,4 +16,8 @@ public abstract class Transport {
     }
     public String getModel() { return model;}
     public float getEngineVolume() { return engineVolume;}
-    }
+
+    public abstract void bestLapTime();
+
+    public abstract void maxSpeed();
+}
